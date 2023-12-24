@@ -6,8 +6,18 @@ import { RouterOutlet } from '@angular/router';
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  template : `
+    <h1 [class] = "'headerColor'">
+      Marvellous Infosystems
+    </h1>
+    <input>
+  `,
+  // templateUrl: './app.component.html',
+  styles : [`
+    .headerColor { 
+      color : blue 
+    }
+  `]    
 })
 export class AppComponent {
   title = 'Problem3';
